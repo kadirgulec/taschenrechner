@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Orbitron:wght@400;700;800&family=Roboto:ital,wght@0,300;0,400;0,900;1,400&family=Silkscreen&display=swap');
+
+*{
+    font-family: 'Orbitron', sans-serif;
+}
+#dasErgebnis{
+    background-color: black;
+    color: white;
+    text-align: end;  
+    grid-area:  1 / 1 / 2 / 5; 
+    padding-right: .2rem; 
+    letter-spacing: .3rem;
+    padding-bottom: 1rem;
+    
+}
+#ergebnis{
+    margin: 0;
+    padding: 0;
+}
+#current{
+    font-size: .8rem;
+    letter-spacing: normal;
+    margin: 0;
+    
+}
+.wrapper{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: repeat(7, 3rem);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+       
+}
+.clear{ 
+    grid-area: 2 / 1 / 3 / 3;
+}
+.backspace{
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+.komma { 
+    grid-area: 6 / 2 / 6 / 4; 
+}
+.esittir{
+    grid-area: 7 / 1 / 7 / 5;
+}
+
+
+.zahlen{
+    background-color: hsl(0, 59%, 41%);
+    color: white;
+}
+.zahlen:active{
+    background-color: hsl(0, 59%, 65%);
+    transform: translateY(2px);
+}
+.kommand{
+    background-color: hsl(34, 57%, 70%);
+    color: black;
+}
+.kommand:active{
+    background-color: hsl(34, 57%, 40%);
+    transform: translateY(2px);
+}
+.button{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
