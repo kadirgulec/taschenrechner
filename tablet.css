@@ -1,0 +1,38 @@
+@media (max-height:650px) and (min-width:360px) and (max-width:9999px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(7, 3rem);
+        grid-template-rows: repeat(4, 3rem);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .clear{ 
+        grid-area: 2 / 1 / 3 / 3;
+    }
+    .backspace{
+        grid-area: 2 / 3 / 3 / 5;
+    }
+    
+    .komma { 
+        grid-area: 4 / 6 / 5 / 8; 
+    }
+    .esittir{
+        grid-area: 4 / 1 / 5 / 5;
+    }
+    #topla{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    #cikar{
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    #carp{
+        grid-area: 3 / 3 / 4 / 4;
+    }
+    #bol{
+        grid-area: 3 / 4 / 4 / 5;
+    }
+    .null { grid-area: 4 / 5 / 5 / 6; }
+    *{
+        font-size: 1rem;
+    }
+}
